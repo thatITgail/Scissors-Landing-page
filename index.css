@@ -1,0 +1,786 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font: 1rem/1.5  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #fff;
+  color: #062624f3;
+}
+/*General styling*/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+h2, 
+h4{
+  font-weight: 700;
+}
+button{
+  font-family: inherit;
+  font-weight: 600;
+  font-size: .875rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+select,
+.login-btn,
+.learn-more-btn{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.free-trial-btn,
+.signup-btn,
+.custom-pricing-btn,
+.select-pricing-btn,
+.trim-url-btn,
+.get-started-btn{
+  width: 10rem;
+  height: 3rem;
+  color: #fff;
+  border: 1px solid #005EA2;
+  background-color: #005EA2;
+}
+.login-btn,
+.learn-more-btn,
+.deep-blue{
+  color: #005EA2;
+  /*color: #2a51e4ff;*/
+}
+.deep-blue{
+  font-weight: 900;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.scissors-purpose-header h2,
+.scissors-pricing-header h2,
+.scissors-FAQ-header h2{
+  position: relative;
+  font-size: 2rem;
+}
+/*page styling*/
+.wrapper{
+  position: relative;
+  width: min(80rem, 100%);
+  margin-inline: auto;
+  text-align: center;
+  z-index: 999;
+  /* border: 1px solid red; */
+}
+
+/*nav section*/
+.scissors-navbar{
+  position: relative;
+  width: 85%;
+  height: 4rem;
+  gap: 3rem;
+  margin: 0 auto;
+ /* border: 1px solid #005EA2;*/
+}
+.menu{
+  display: none;
+}
+.scissors-nav-list-container{
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.scissors-nav-list-container ul, 
+.scissors-nav-btn-container{
+  gap: 2rem;
+}
+.scissors-nav-list-container li a{
+  font-weight: 500;
+}
+/*header section*/
+.scissors-header{
+  width: 75%;
+  margin: 1.5rem auto;
+}
+.scissors-header-title{
+  font-size: 3rem;
+  line-height: 2;
+}
+.scissors-header-title .relative{
+  position: relative;
+  margin-inline: .5rem;
+}
+.underline{
+  position: absolute;
+  top: 3.5rem;
+  left: 4.5rem;
+}
+.scissors-header-text{
+  width: 65%;
+  margin: 1.5rem auto;
+}
+.scissors-header-btn-container{
+  margin-block: 2rem;
+}
+.learn-more-btn{
+  margin-left: 2rem;
+}
+.scissors-showcase,
+.scissors-purpose,
+.scissors-pricing{
+  width: 90%;
+  padding: 2rem;
+  margin: 1rem auto;
+}
+.scissors-showcase-banner{
+  width: 65%;
+  padding: 2rem 3rem 3rem;
+  display: grid;
+  place-self: flex-end;
+  border-radius: 1rem;
+  margin-right: 5rem;
+  box-shadow: 1px 1px 2px #005EA2;
+  border: 1px solid #005EA2;
+}
+.scissors-showcase-banner-img{
+  margin-top: -1rem;
+}
+.scissors-showcase-banner-text{
+  width: 70%;
+  margin-left: 8rem;
+  text-align: right;
+}
+.scissors-showcase-wrapper{
+  margin-top: 2rem;
+}
+.scissors-showcase-flat-screen{
+  max-width: 100%;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.scissors-showcase-content{
+  margin-top: -.75rem;
+  align-items: flex-start;
+  gap:  6.5rem;
+  padding-block: 2rem;
+  background-color: #f6f8f8;
+  /* border: 1px solid red; */
+}
+.scissors-showcase-header{
+  width: 25%;
+  text-align: left;
+}
+.scissors-showcase-header h2{
+  font-size: 2rem;
+  font-weight: 700;
+ /* border: 1px solid black;*/
+}
+.scissors-showcase-sections{
+  text-align: left;
+  width: 65%;
+  gap: 3rem;
+}
+.scissors-showcase-sections-content{
+  width: 10rem;
+  height: 7rem;
+}
+.scissors-showcase-sections-content h3{
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+/*scissors-purpose*/
+.scissors-purpose{
+  align-items: flex-start;
+  gap: 2rem;
+  margin-block: 3rem;
+}
+.scissors-purpose-header{
+  width: 33%;
+  text-align: left;
+}
+.scissors-purpose-header p{
+  margin: .5rem;
+}
+.line{
+  position: absolute;
+  top: .5rem;
+  left: -1rem;
+  display: inline-block;
+  width: .25rem;
+  height: 2rem;
+  background-image: linear-gradient(180deg,  #062624f3 10%, #fff);
+}
+.scissors-purpose-content{
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 2rem;
+  text-align: left;
+}
+.scissors-purpose-content h3{
+  font-size: 2rem;
+  margin-block: .5rem;
+}
+/*pricing*/
+.scissors-pricing{
+  padding-block: 3rem;
+}
+.scissors-pricing-header{
+  width: 60%;
+  margin: 2rem auto;
+  /*border: 1px solid red;*/
+}
+.scissors-pricing-header h2 .line{
+  left: 6rem;
+}
+.scissors-pricing-header p{
+  width: 85%;
+  margin: .5rem auto;
+}
+.scissors-pricing-cards{
+  position: relative;
+  width: 90%;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 8rem auto;
+  padding: 0 1.5rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #005EA2;
+  /*border: 1px solid #005EA2;*/
+}
+.scissors-pricing-card{
+  padding: 1rem 2rem 0;
+}
+.scissors-pricing-options{
+  text-align: left;
+}
+.scissors-pricing-level{
+  margin-top: 0;
+}
+.scissors-pricing-cost{
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: .5rem;
+}
+.scissors-pricing-cost i{
+  font-weight: 400;
+}
+.scissors-pricing-contents{
+  margin-block: 1rem;
+  padding-block: .5rem;
+  text-align: left;
+}
+.scissors-pricing-contents li{
+  display: flex;
+  align-items: center;
+  gap: 0 .5rem;
+  margin-bottom: 1.2rem;
+}
+.list-icon{
+  border-radius: 50%;
+  border: 1px solid #005EA2;
+}
+.scissors-pricing-card:nth-child(2){
+  position: absolute;
+  top: -2rem;
+  left: 35%;
+  width: 30%;
+  transform: scale(1.2);
+  height: 28rem;
+  background-color: #062624f3;
+  color: #fff;
+  border-radius: 10px;
+}
+.scale .scissors-pricing-level{
+   margin-top: 3rem;
+}
+.scale .scissors-pricing-cost{
+  margin-top: .5rem;
+}
+.scale .scissors-pricing-contents{
+  margin: 0;
+}
+.scissors-pricing-btn-container{
+  margin-top: 9rem;
+  justify-content: center;
+  gap: 0 1rem;
+}
+.custom-pricing-btn,
+.select-pricing-btn{
+  width: 11rem;
+}
+.custom-pricing-btn{
+  margin-left: 0;
+  color: #005EA2;
+  background-color: transparent;
+}
+.select-pricing-btn{
+  margin-right: 1rem;
+}
+
+/*form*/
+.scissors-form{
+  height: 32rem;
+  margin-block: 4rem 0;
+  padding-block: 1rem;
+  background: linear-gradient(45deg,  #005EA2, #062624f3), url('./images/bg.jpg');
+  background-size: 100% 100%, contain;
+  background-position: left top;
+}
+.scissors-form-card{
+  width: 35%;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.scissors-form-url-input,
+.scissors-form-domain,
+.scissors-form-choice{
+  width: 100%;
+  height: 2.5rem;
+  text-indent: 1rem;
+  border: 1px solid #9cc7e6;
+  outline: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+.scissors-form-url-input::placeholder,
+.scissors-form-choice input::placeholder{
+  color: #005EA2;
+}
+.scissors-form-domain-container{
+  gap: 0 1rem;
+  margin-block: 1.5rem;
+}
+.scissors-form-domain,
+.scissors-form-choice{
+  width: 50%;
+  color: #005EA2;
+}
+.scissors-form-domain select,
+.scissors-form-choice input{
+  width: 100%;
+  color: inherit;
+  border: none;
+  text-indent: .5rem;
+  outline: none;
+}
+.trim-url-btn{
+   justify-content: center;
+   gap: .5rem;
+   width: 100%;
+ }
+ .trim-icon{
+   width: .7rem;
+   height: 2rem;
+ }
+ .scissors-form-consent{
+   text-align: left;
+   margin-block: 1.5rem;
+ }
+ /*FAQ*/
+ .scissors-FAQs{
+   position: relative;
+   padding-bottom: 7rem;
+   gap: 7rem;
+   overflow: hidden;
+ }
+ .scissors-FAQ-img-container{
+   width: 20%;
+   margin-top: -4rem;
+   margin-left: -4rem;
+   /*border: 1px solid black;*/
+ }
+ .scissors-FAQ-img{
+   height: 100%;
+   object-fit: cover;
+ }
+ .scissors-FAQ-content{
+   width: 60%;
+   padding: 1rem;
+   text-align: left;
+   /*border: 1px solid black;*/
+ }
+ .scissors-FAQ-content-header{
+   padding-block: 1rem;
+   text-align: center;
+   /*border: 1px solid red;*/
+ }
+ .scissors-FAQ-content-header .line{
+   top: 2.5rem;
+   left: 50.5%;
+ }
+ .scissors-FAQ{
+   margin-block: 1rem;
+ }
+ .scissors-FAQ-title{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 1rem;
+   padding-top: 1rem;
+ }
+ .scissors-FAQ-title h3{
+   width: 95%;
+   font-weight: 400;
+ }
+ .scissors-FAQ-answer {
+   margin-top: 1rem;
+ }
+ .scissors-FAQ-answer p{
+   line-height: 2em;
+ }
+ /*link page*/
+ .scissors-pages{
+   margin-block: 2rem;
+   /*padding-block: 2rem;*/
+ }
+ .scissors-pages-header{
+   width: 100%;
+   height: 18rem;
+   margin-inline: auto;
+   padding-block: 5.5rem;
+   background: linear-gradient(45deg,  #005EA2, #062624f3), url('./images/bg.jpg');
+  background-size: 100% 100%, contain;
+  background-position: left top;
+ }
+ .scissors-pages h2{
+   font-size: 2.2rem;
+   color: #fff;
+ }
+ .get-started-btn{
+   margin-top: 1.5rem;
+ }
+ .scissors-pages-container{
+   align-items: flex-start;
+   gap: 1rem;
+   padding-block: 1rem;
+ }
+ .scissors-pages-img-container{
+   position: relative;
+ }
+ .scissors-pages-bg-img{
+   margin-top: 0;
+ }
+ .scissors-pages-img{
+   position: absolute;
+   top: 5rem;
+   right: 4rem;
+   width: 15rem;
+   margin-left: 0;
+ }
+ .scissors-pages-content{
+   align-items: flex-start;
+ }
+ .scissors-pages-content{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   margin-top: 5rem;
+   gap: 0 3rem;
+   text-align: left;
+ }
+ .scissors-pages-content-lists{
+   width: 10rem;
+ }
+ .scissors-pages-content-lists:nth-child(2){
+   grid-column: 1;
+   grid-row: 2;
+ }
+ .scissors-pages-content-lists:nth-child(4){
+   grid-column: 2;
+   grid-row: 2;
+ }
+ .scissors-pages-content-lists:nth-child(7){
+   grid-column: 4;
+   grid-row: 1;
+ }
+ .scissors-pages-content-lists h4{
+   font-size: 1rem;
+   margin-bottom: .5rem;
+ }
+ .scissors-pages-content-lists li{
+   margin-bottom: .25rem;
+ }
+ /*footer*/
+ .scissors-footer{
+   text-align-last: right;
+   margin-bottom: 2rem;
+ }
+ .scissors-footer p{
+   font-size: 1.2rem;
+ }
+ .scissors-footer span{
+   margin-left: 1rem;
+ }
+ 
+ @media screen and (max-width: 1040px) {
+  /* General styling */
+   .wrapper{
+    position: relative;
+    width: min(28rem, 100%);
+    height: 100%;
+    overflow: hidden;
+   }
+   .learn-more-btn{
+     color: inherit;
+   }
+   .signup-btn{
+     width: 8rem;
+     height: 2rem;
+   }
+   /* Page Styling */
+   .scissors-navbar{
+     position: relative; 
+     width: 100%;
+     /* height: 100%; */
+     justify-content: space-between;
+     padding-block: .5rem;
+   }
+    .scissors-navbar .icon-container{
+      width: 100%;
+      justify-content: space-between;
+      padding-inline: 1rem;
+    }
+    .menu{
+      cursor: pointer;
+    }
+    .menu-open{
+      display: block;
+    }
+    .scissors-navbar .menu-close{
+      position: absolute;
+      top: 1rem;
+      right: 3rem;
+    }
+   .scissors-nav-list-container{
+     display: none;
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 70%;
+     height: 100%;
+     padding: 5rem 1rem;
+     font-size: 1.2rem;
+     background-color: #fff;
+     z-index: 999;
+    }
+    .scissors-nav-list{
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 1rem;
+    }
+    .scissors-nav-btn-container {
+     position: absolute;
+     bottom: 0;
+     padding-left: 1rem;
+   }
+   .scissors-header{
+     width: 100%;
+     /* border: 1px solid red; */
+   }
+   .scissors-header-title{
+     position: relative;
+     font-size: 2rem;
+     line-height: 1.5;
+   }
+  .scissors-header-title .space{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   }
+   .scissors-header-title .relative{
+     margin-inline: 0;
+   }
+   .underline{
+     width: 7rem;
+     top: 2rem;
+     left: 7rem;
+   }
+   .scissors-header-text{
+     width: 100%;
+     font-size: 1rem;
+   }
+
+   /* scissors showcase */
+   .scissors-showcase{
+     width: 100%;
+     padding-inline: 0;
+     margin-inline: 0;
+     /* border: 1px solid red; */
+   }
+   .scissors-showcase-banner{
+     width: 100%;
+     place-self: flex-start;
+     margin-right: 0;
+   }
+   .scissors-showcase-banner-img{
+     width: 12rem;
+     margin-top: 0;
+   }
+   .scissors-showcase-banner-text{
+     width: 100%;
+     margin-left: 0;
+     margin-top: 1rem;
+     font-size: 1rem;
+   }
+   .scissors-showcase-content{
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem 0;
+    /* background-color: #666; */
+   }
+   .scissors-showcase-header{
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+   }
+   .scissors-showcase-sections{
+    width: 100%;
+    padding-inline: 2rem;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+   }
+  .scissors-showcase-sections-content h3{
+    font-size: 1.8rem;
+  }
+
+  /* scissors purpose */
+  .scissors-purpose{
+    width: 100%;
+    flex-direction: column;
+    margin-block: 0;
+    padding: 1rem;
+    /* border: 1px solid red; */
+  }
+  .scissors-purpose-header{
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+  .scissors-purpose-header p{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .scissors-purpose-header h2 .line{
+    left: 3rem;
+  }
+  .scissors-purpose-content{
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+  .scissors-purpose-content h3{
+    font-size: 1.2rem;
+  }
+
+  /* scissors pricing */
+  .scissors-pricing,
+  .scissors-pricing-header{
+    width: 100%;
+    padding: 1rem;
+    /* border: 1px solid red; */
+  }
+  .scissors-pricing-header{
+    margin-block: 1rem;
+  }
+  .scissors-pricing-header h2 .line{
+    left: .5rem;
+  } 
+  .scissors-pricing-cards{
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem 0;
+    margin-block: 2rem;
+    padding-inline: 1rem;
+    box-shadow: none;
+    /* background-color: #005EA2; */
+  }
+  .scissors-pricing-card{
+    width: 82%;
+    height: 25rem;
+    border-radius: .5rem;
+    background-color: #f6f8f8;
+    /* border: 1px solid red; */
+  }
+  .scissors-pricing-card:nth-child(2){
+    position: relative;
+    width: 82%;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    height: 26rem;
+  }
+  .scale .scissors-pricing-level{
+    margin-top: 1rem;
+  }
+  .scale .scissors-pricing-contents{
+    margin-top: 1rem;
+  }
+  .scissors-pricing-btn-container{
+    margin-top: 3rem;
+  }
+
+  /* scissors form */
+  .scissors-form{
+    margin-block: 2rem;
+    /* border: 1px solid red; */
+  }
+  .scissors-form-card{
+    width: 90%;
+  }
+
+  /* scissors FAQs */
+  .scissors-FAQ-content{
+    width: 100%;
+    /* padding: 0; */
+    margin-left: -7rem;
+  }
+  .scissors-FAQ-content-header .line{
+    left: 45%;
+  }
+
+  /* scissors pages */
+  .scissors-pages-header{
+    padding-block: 3rem;
+  }
+  .scissors-pages-container{
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+  .scissors-pages-img{
+    top: 1rem;
+    right: 9rem;
+  }
+  .scissors-pages-content{
+    grid-template-columns: 1fr;
+    margin-top: -22rem;
+    gap: 0 .5rem;
+    padding: 0 .5rem;
+    text-align: left;
+  }
+  .scissors-pages-content-lists{
+    width: 9.5rem;
+  }
+  .scissors-footer{
+    text-align-last: center;
+  }
+ }
+
+
+ /* Javascript */
+ .active{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   inset: 0;
+   background-color: hsl(233, 8%, 79%);
+   z-index: 9999;
+ }
+ .open{
+  display: block;
+ }
