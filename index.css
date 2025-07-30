@@ -435,6 +435,7 @@ select,
  .scissors-FAQ-answer p{
    line-height: 2em;
  }
+
  /*link page*/
  .scissors-pages{
    margin-block: 2rem;
@@ -568,6 +569,7 @@ select,
      font-size: 1.2rem;
      background-color: #fff;
      z-index: 999;
+     /* transition: transform .3s ease-in; */
     }
     .scissors-nav-list{
       flex-direction: column;
@@ -579,6 +581,11 @@ select,
      bottom: 0;
      padding-left: 1rem;
    }
+   .free-trial-btn{
+      width: 7rem;
+      height: 2.5rem;
+   }
+   
    .scissors-header{
      width: 100%;
      /* border: 1px solid red; */
@@ -640,13 +647,17 @@ select,
     /* border: 1px solid red; */
    }
    .scissors-showcase-sections{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     padding-inline: 2rem;
-    flex-wrap: wrap;
-    /* border: 1px solid red; */
+    /* flex-wrap: wrap; */
+   }
+   .scissors-showcase-sections-content{
+    width: 8rem;
    }
   .scissors-showcase-sections-content h3{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   /* scissors purpose */
@@ -668,7 +679,7 @@ select,
     text-align: center;
   }
   .scissors-purpose-header h2 .line{
-    left: 3rem;
+    left: 1rem;
   }
   .scissors-purpose-content{
     width: 100%;
@@ -741,7 +752,7 @@ select,
     margin-left: -7rem;
   }
   .scissors-FAQ-content-header .line{
-    left: 45%;
+    left: 42%;
   }
 
   /* scissors pages */
@@ -750,21 +761,26 @@ select,
   }
   .scissors-pages-container{
     flex-direction: column;
-    /* border: 1px solid red; */
+    justify-content: center;
   }
   .scissors-pages-img{
     top: 1rem;
-    right: 9rem;
+    right: 12rem;
   }
   .scissors-pages-content{
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* grid-template-columns: 1fr; */
     margin-top: -22rem;
-    gap: 0 .5rem;
-    padding: 0 .5rem;
+    gap: 1rem;
+    padding: 0 2rem;
     text-align: left;
+    /* border: 1px solid red; */
   }
   .scissors-pages-content-lists{
-    width: 9.5rem;
+    /* width: 9.5rem; */
+    width: 100%;
   }
   .scissors-footer{
     text-align-last: center;
