@@ -679,7 +679,7 @@ select,
     text-align: center;
   }
   .scissors-purpose-header h2 .line{
-    left: 1rem;
+    left: 2.5rem;
   }
   .scissors-purpose-content{
     width: 100%;
@@ -713,7 +713,8 @@ select,
   }
   .scissors-pricing-card{
     width: 82%;
-    height: 25rem;
+    height: fit-content;
+    padding-bottom: 1rem;
     border-radius: .5rem;
     background-color: #f6f8f8;
     /* border: 1px solid red; */
@@ -724,7 +725,8 @@ select,
     top: 0;
     left: 0;
     transform: scale(1);
-    height: 26rem;
+    height: inherit;
+    padding-bottom: 2rem;
   }
   .scale .scissors-pricing-level{
     margin-top: 1rem;
@@ -752,7 +754,7 @@ select,
     margin-left: -7rem;
   }
   .scissors-FAQ-content-header .line{
-    left: 42%;
+    left: 40%;
   }
 
   /* scissors pages */
@@ -790,7 +792,7 @@ select,
 
  /* Javascript */
  .active{
-   position: relative;
+   position: fixed;
    width: 100%;
    height: 100%;
    inset: 0;
